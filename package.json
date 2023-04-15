@@ -1,0 +1,29 @@
+{
+  "name": "sso_generator",
+  "version": "1.0.0",
+  "description": "SSO generator for blackthorn apps",
+  "main": "app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sychus/sso_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sychus/sso_generator/issues"
+  },
+  "homepage": "https://github.com/sychus/sso_generator#readme",
+  "dependencies": {
+    "Buffer": "^0.0.0",
+    "crypto": "^1.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}
