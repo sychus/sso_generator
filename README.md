@@ -4,7 +4,7 @@ This Node.js module allows you to generate Single Sign-On (SSO) codes for a give
 
 ## Prerequisites
 Before using project, you need to docker and docker-compose installed on your system.
-```bash
+
 1. Install Docker
 Linux: In most Linux distributions, you can install Docker through their package manager. For example, in Ubuntu, you can run the following command in a terminal:
 
@@ -22,17 +22,17 @@ Mac: Docker Compose is already included in Docker Desktop for Mac, so you don't 
 Windows: Docker Compose is already included in Docker Desktop for Windows, so you don't need to install it separately.
 
 Once Docker and Docker Compose are installed, you can run Docker Compose commands from a terminal. Make sure you have a valid docker-compose.yml file in your working directory so that Docker Compose can create and run the containers you need for your application.
-´´´
+
 
 ## Usage
 To use this application, just run:
-
 ```javascript
 docker-compose up -d
 ```
 To remove the project:
 ```javascript
 docker-compose down
+```
 
 Once the docker image is downloaded and the entire setup process is done, simply do the following:
 1- Open a browser
