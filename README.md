@@ -3,41 +3,47 @@
 This Node.js module allows you to generate Single Sign-On (SSO) codes for a given contact ID, expiration time, and encryption key. The SSO code is a secure token that can be used to authenticate users without requiring them to enter their credentials each time they access a resource.
 
 ## Prerequisites
-Before using this module, you need to have Node.js installed on your system.
+Before using project, you need to docker and docker-compose installed on your system.
+```bash
+1. Install Docker
+Linux: In most Linux distributions, you can install Docker through their package manager. For example, in Ubuntu, you can run the following command in a terminal:
 
-## Installation
-To install this module, simply run:
+sudo apt-get install docker.io
+Mac: You can download and install Docker Desktop from the official Docker website.
 
-```javascript
-npm install sso-code-generator
-```
+Windows: You can download and install Docker Desktop from the official Docker website.
+
+2. Install Docker Compose
+Linux: You can install Docker Compose through your Linux distribution's package manager. For example, in Ubuntu, you can run the following command in a terminal:
+
+sudo apt-get install docker-compose
+Mac: Docker Compose is already included in Docker Desktop for Mac, so you don't need to install it separately.
+
+Windows: Docker Compose is already included in Docker Desktop for Windows, so you don't need to install it separately.
+
+Once Docker and Docker Compose are installed, you can run Docker Compose commands from a terminal. Make sure you have a valid docker-compose.yml file in your working directory so that Docker Compose can create and run the containers you need for your application.
+´´´
 
 ## Usage
-To use this application, follow these steps:
-1. Clone this repository to your local machine.
-2. Open a terminal and navigate to the project directory.
-3. Install the project dependencies by running `npm install`.
-4. Run the application by executing the following command in the terminal:
+To use this application, just run:
 
-   ```javascript
-   npm start <contactId>
-   ```
+```javascript
+docker-compose up -d
+```
+To remove the project:
+```javascript
+docker-compose down
 
-   Replace `<contactId>` with the ID of the contact for which you want to create an SSO code, for example your orgId. The application will create an SSO code that expires 24 hours after it is created, using a secret encryption key generated from the GUID generated in the `getContextKey()` function. It will then log the SSO code to the console.
+Once the docker image is downloaded and the entire setup process is done, simply do the following:
+1- Open a browser
+2- And paste the following: 'http://localhost:3000/sso/?contactId=xxxxxxxxxxxx&daysToExpire=yy'
+
+Where contactId in this case could be your organization id and daysToExpire any number of days for example the number 15
 
 ## Functions
 This module exposes the following functions:
 
-### `encodeContext(context: DecodedContext, secretKey: Buffer): string`
-This function takes a decoded context object and a secret key, and returns a Base64-encoded, AES-256-encrypted string.
-
-### `createSSOCode(contactId: string, expiresIn: number, SSO_ENCRYPTION_KEY: Buffer): string`
-This function takes a contact ID, an expiration time in seconds, and a secret encryption key, and returns a string representing an SSO code that can be used to authenticate the contact.
-
-### `run(): void`
-This function runs the application. It generates a context key using the `getContextKey()` function, encodes it in Base64 using the `encode64()` function, and creates an SSO code using the `createSSOCode()` function. The SSO code is then logged to the console.
-
 ### `Important`
 This program returns two different keys
-- Context key with encode 64 should be sent to support and must be added to license metadata.
-- It is the SSO  key and should be save in a safe place.
+- ´contextKeyForSupportTeam´ should be sent to support and must be added to license metadata.
+- ´ssoToken´ It is the SSO key and should be save in a safe place.

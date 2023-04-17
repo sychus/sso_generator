@@ -1,0 +1,11 @@
+
+> sso_generator@1.0.0 start
+> node dist/main.js
+
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSsoController {/sso}:[39m[38;5;3m +11ms[39m
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/sso, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 11291  - [39m04/15/2023, 9:37:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
