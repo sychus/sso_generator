@@ -9,16 +9,16 @@ Before using project, you need to docker and docker-compose installed on your sy
 Linux: In most Linux distributions, you can install Docker through their package manager. For example, in Ubuntu, you can run the following command in a terminal:
 
 sudo apt-get install docker.io
-Mac: You can download and install Docker Desktop from the official Docker website.
 
+Mac: You can download and install Docker Desktop from the official Docker website.
 Windows: You can download and install Docker Desktop from the official Docker website.
 
 2. Install Docker Compose
 Linux: You can install Docker Compose through your Linux distribution's package manager. For example, in Ubuntu, you can run the following command in a terminal:
 
 sudo apt-get install docker-compose
-Mac: Docker Compose is already included in Docker Desktop for Mac, so you don't need to install it separately.
 
+Mac: Docker Compose is already included in Docker Desktop for Mac, so you don't need to install it separately.
 Windows: Docker Compose is already included in Docker Desktop for Windows, so you don't need to install it separately.
 
 Once Docker and Docker Compose are installed, you can run Docker Compose commands from a terminal. Make sure you have a valid docker-compose.yml file in your working directory so that Docker Compose can create and run the containers you need for your application.
