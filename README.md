@@ -40,9 +40,6 @@ Once the docker image is downloaded and the entire setup process is done, simply
 
 Where contactId in this case could be your organization id and daysToExpire any number of days for example the number 15
 
-## Functions
-This module exposes the following functions:
-
 ### `Important`
 This program returns two different keys
 - ´contextKeyForSupportTeam´ should be sent to support and must be added to license metadata.
