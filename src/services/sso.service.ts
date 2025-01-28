@@ -22,8 +22,8 @@ const createSSOCode = (contactId: string, expiresIn: number, SSO_ENCRYPTION_KEY:
   }, SSO_ENCRYPTION_KEY);
 };
 
-export const generate = (subject: string, expirationDays: number) => {
-  const contextKey = getContextKey();
+export const generate = (orgId: string, subject: string, expirationDays: number) => {
+  const contextKey = getContextKey(orgId);
   const encode64Contextkey = encode64(contextKey);
   const subjectId = subject;
   const expiresIn = expirationDays * 24 * 60 * 60; // days until expiration

@@ -6,7 +6,7 @@ import { generate } from '../services/sso.service';
 export class SsoController {
 
   @Get()
-  getTokens(@Res() res: Response, @Query('contactId') contactId: string, @Query('daysToExpire') daysToExpire: number) {
-    res.status(200).send(generate(contactId, daysToExpire));
+  getTokens(@Res() res: Response, @Query('orgId') orgId: string, @Query('contactId') contactId: string, @Query('daysToExpire') daysToExpire: number) {
+    res.status(200).send(generate(orgId, contactId, daysToExpire));
   }
 }
