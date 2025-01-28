@@ -36,11 +36,11 @@ docker-compose down
 
 Once the docker image is downloaded and the entire setup process is done, simply do the following:
 1- Open a browser
-2- And paste the following: 'http://localhost:3000/sso/?contactId=xxxxxxxxxxxx&daysToExpire=yy'
+2- And paste the following: 'http://localhost:3000/sso/?orgId=yyyyyyy&contactId=xxxxxxxxxxxx&daysToExpire=yy'
 
 Where contactId in this case could be your organization id and daysToExpire any number of days for example the number 15
 
 ### `Important`
 This program returns two different keys
-- ´contextKeyForSupportTeam´ should be sent to support and must be added to license metadata.
+- ´contextKeyForSupportTeam´ should be sent to support and must be added to license metadata (only once).
 - ´ssoToken´ It is the SSO key and should be save in a safe place.
